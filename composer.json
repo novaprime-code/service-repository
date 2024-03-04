@@ -2,20 +2,45 @@
     "name": "jay-patel/service-repository",
     "description": "A package for implementing the repository pattern in Laravel applications, providing a structured approach to data access and manipulation. It creates service, repository, interfaces and migration and model.",
     "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "role": "Developer",
+            "name": "Jay S. Patel",
+            "email": "jayshyampatel133@gmail.com",
+            "homepage": "https://github.com/novaprime-code"
+        }
+    ],
     "require": {
+        "php": "^8.0",
         "laravel/framework": "^9.0.0"
     },
-    "license": "MIT",
     "autoload": {
         "psr-4": {
             "JayPatel\\ServiceRepository\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "jay patel",
-            "email": "jayshyampatel133@gmail.com"
+    "autoload-dev": {
+        "psr-4": {
+            "JayPatel\\ServiceRepository\\Tests\\": "tests/"
         }
-    ],
-    "minimum-stability": "stable"
+    },
+    
+    "minimum-stability": "stable",
+      "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "preferred-install": "dist",
+    "optimize-autoloader": true
+  },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JayPatel\\ServiceRepository\\ServiceRepositoryServiceProvider"
+            ]
+        }
+    }
 }
