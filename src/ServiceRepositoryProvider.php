@@ -1,9 +1,9 @@
 <?php
 
-namespace JayPatel\ServiceRepositoryPackage;
+namespace JayPatel\ServiceRepository;
 
 use Illuminate\Support\ServiceProvider;
-use JayPatel\ServiceRepositoryPackage\Commands\GenerateServiceRepository;
+use JayPatel\ServiceRepository\Commands\GenerateServiceRepository;
 
 class ServiceRepositoryProvider extends ServiceProvider
 {

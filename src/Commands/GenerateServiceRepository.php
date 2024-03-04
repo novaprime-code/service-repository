@@ -1,6 +1,7 @@
 <?php
 
-namespace JayPatel\ServiceRepositoryPackage\Commands;
+namespace JayPatel\ServiceRepository\Commands;
+
 use Illuminate\Console\Command;
 
 class GenerateServiceRepository extends Command
@@ -20,7 +21,7 @@ class GenerateServiceRepository extends Command
         $this->generateModel($modelName);
         $this->generateApiController($modelName);
 
-        $this->info("Serive Repository Files for the '$modelName' model generated successfully!");
+        $this->info("Service Repository Files for the '$modelName' model generated successfully!");
     }
 
     protected function generateModel($modelName)
