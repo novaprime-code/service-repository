@@ -1,0 +1,21 @@
+{
+    "name": "jay-patel/service-repository",
+    "description": "A package for implementing the repository pattern in Laravel applications, providing a structured approach to data access and manipulation. It creates service, repository, interfaces and migration and model.",
+    "type": "library",
+    "require": {
+        "laravel/framework": "^9.0.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "JayPatel\\ServiceRepository\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jay patel",
+            "email": "jayshyampatel133@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
