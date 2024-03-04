@@ -1,0 +1,11 @@
+<?php
+
+namespace App\Repositories\Interfaces;
+
+use App\Models\::modelName::;
+
+interface ::modelName::RepositoryInterface
+{
+    // Add methods here
+}
+

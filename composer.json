@@ -31,7 +31,10 @@
   "config": {
     "sort-packages": true,
     "preferred-install": "dist",
-    "optimize-autoloader": true
+    "optimize-autoloader": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
   },
     "scripts": {
         "test": "phpunit"
@@ -42,5 +45,8 @@
                 "JayPatel\\ServiceRepository\\ServiceRepositoryServiceProvider"
             ]
         }
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.34"
     }
 }

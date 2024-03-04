@@ -1,0 +1,11 @@
+<?php
+
+namespace App\Services;
+use App\Models\::modelName::;
+use App\Repositories\Interfaces\::modelName::RepositoryInterface;
+use App\Services\Interfaces\::modelName::ServiceInterface;
+
+class ::modelName::Service implements ::modelName::ServiceInterface
+{
+    // Add methods here
+}

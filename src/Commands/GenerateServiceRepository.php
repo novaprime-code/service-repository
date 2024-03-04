@@ -3,7 +3,7 @@
 namespace JayPatel\ServiceRepositoryPackage\Commands;
 use Illuminate\Console\Command;
 
-class GenerateServiceRepositoryCommand extends Command
+class GenerateServiceRepository extends Command
 {
     protected $signature = 'make:service-repository {model}';
     protected $description = 'Generate files for a service repository pattern';
@@ -85,7 +85,7 @@ class GenerateServiceRepositoryCommand extends Command
     protected function getStubContent($fileType, $modelName)
     {
         // $stubPath = __DIR__ . "/stubs/{$fileType}.stub";
-        $stubPath = base_path("app/stubs/{$fileType}.stub");
+        $stubPath = resource_path("stubs/{$fileType}.stub");
         $content = file_get_contents($stubPath);
 
         // Replace placeholders with actual values
